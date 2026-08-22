@@ -4,7 +4,7 @@ using namespace std;
 bool isMonotonic(vector<int>& nums){
     bool decreasing=true;
     bool increasing=true;
-    for(int i=0;i<nums.size();i++){
+    for(int i=1;i<nums.size();i++){
         if(nums[i]>nums[i-1]){
             decreasing=false;
         }
